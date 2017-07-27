@@ -1,0 +1,45 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "style",
+        "src": "./source/app.css"
+      },
+      {
+        "type": "script",
+        "src": "./source/app.js"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "domain_id": {
+        "title": "Domain ID",
+        "required": true,
+        "placeholder": "00000000",
+        "order": 1,
+        "type": "string"
+      },
+      "account_id": {
+        "required": true,
+        "title": "Account ID",
+        "placeholder": "000000",
+        "order": 1,
+        "type": "string"
+      },
+      "seal_badge": {
+        "order": 1,
+        "title": "Seal Position",
+        "type": "string",
+        "format": "radios",
+        "default": "None",
+        "enum": ["None", "Left", "Right"],
+        "enumNames": {
+          "None": "None",
+          "Left": "Left",
+          "Right": "Right"
+        }
+      }
+    }
+  }
+}
